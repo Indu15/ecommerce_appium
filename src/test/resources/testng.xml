@@ -1,0 +1,14 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Ecommerce Suite" parallel="false">
+  <parameter name="capsPath" value="src/test/resources/capabilities/android.json"/>
+  <parameter name="searchTerm" value="shirt"/>
+  <parameter name="email" value="qa+guest@example.com"/>
+  <parameter name="name" value="QA Guest"/>
+  <parameter name="address" value="123 Test Street"/>
+  <test name="Checkout Flow">
+    <classes>
+      <class name="tests.CheckoutFlowTest"/>
+    </classes>
+  </test>
+</suite>
