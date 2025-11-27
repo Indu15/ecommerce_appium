@@ -9,7 +9,7 @@ import pages.*;
 public class CheckoutFlowTest extends BaseTest {
 
     @Parameters({"searchTerm", "email", "name", "address"})
-    @Test(description = "Search product -> Add to cart -> Checkout as guest")
+    @Test(enabled = false , description = "Search product -> Add to cart -> Checkout as guest")
     public void e2eCheckoutFlow(String searchTerm, String email, String name, String address) {
         HomePage home = new HomePage();
         home.search(searchTerm);

@@ -1,9 +1,29 @@
 {
-  "serverUrl": "http://127.0.0.1:4723",
-  "deviceName": "Android Emulator",
-  "platformVersion": "14",
-  "app": "",
-  "appPackage": "com.example.shop",
-  "appActivity": ".MainActivity",
-  "autoGrantPermissions": true
+  "default": {
+    "serverUrl": "http://127.0.0.1:4723",
+    "deviceName": "Android Emulator",
+    "platformVersion": "16",
+    "app": "",
+    "appPackage": "com.google.android.calculator",
+    "appActivity": "com.android.calculator2.Calculator",
+    "autoGrantPermissions": true,
+    "noReset": true
+  },
+
+
+  "walmart": {
+    "serverUrl": "http://127.0.0.1:4723",
+    "platformName": "Android",
+    "automationName": "UiAutomator2",
+    "deviceName": "Android Emulator",
+    "platformVersion": "16",
+    "app": "",
+    "appPackage": "com.walmart.android",
+    "appActivity": "",
+    "autoGrantPermissions": true,
+    "noReset": true,
+    "newCommandTimeout": 300,
+    "uiautomator2ServerLaunchTimeout": 60000,
+    "adbExecTimeout": 60000
+  }
 }
