@@ -16,7 +16,7 @@ public class BaseTest {
 
     @Parameters({"capsPath"})
     @BeforeClass
-    public void setUp(@Optional("src/test/resources/capabilities/android.json#default") String capsPath) {
+    public void setUp(@Optional("src/test/resources/capabilities/android.json#apidemos") String capsPath) {
         DriverManager.startAndroid(capsPath);
     }
 

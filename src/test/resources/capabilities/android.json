@@ -25,5 +25,20 @@
     "newCommandTimeout": 300,
     "uiautomator2ServerLaunchTimeout": 60000,
     "adbExecTimeout": 60000
+  },
+
+  "apidemos": {
+    "serverUrl": "http://127.0.0.1:4723",
+    "platformName": "Android",
+    "automationName": "UiAutomator2",
+    "deviceName": "Android Emulator",
+    "platformVersion": "16",
+
+    "app": "C:\\apps\\ApiDemos-debug (1).apk",
+    "appPackage": "io.appium.android.apis",
+    "appActivity": "io.appium.android.apis.ApiDemos",
+
+    "autoGrantPermissions": true,
+    "noReset": true
   }
 }

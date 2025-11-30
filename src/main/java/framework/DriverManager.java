@@ -58,6 +58,10 @@ public class DriverManager {
             System.out.println("Using capabilities: " + selectedCaps);
 
             UiAutomator2Options options = new UiAutomator2Options();
+            // These are safe defaults; JSON can override them if needed
+            options.setPlatformName("Android");        // from BaseOptions
+            options.setAutomationName("UiAutomator2"); // UiAutomator2Options default, but explicit is fine
+
 
             if (selectedCaps.containsKey("deviceName")) options.setDeviceName(selectedCaps.get("deviceName").toString());
             if (selectedCaps.containsKey("platformVersion")) options.setPlatformVersion(selectedCaps.get("platformVersion").toString());
